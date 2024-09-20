@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Events - Event Head</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Event Head Panel</h1>
+        <form action="/add_event" method="POST">
+            <label for="event_name">Event Name:</label>
+            <input type="text" id="event_name" name="event_name" required>
+
+            <label for="event_desc">Event Description:</label>
+            <textarea id="event_desc" name="event_desc" required></textarea>
+
+            <label for="event_venue">Event Venue:</label>
+            <input type="text" id="event_venue" name="event_venue" required>
+
+            <label for="event_date">Event Date:</label>
+            <input type="date" id="event_date" name="event_date" required>
+
+            <label for="event_time">Event Time:</label>
+            <input type="time" id="event_time" name="event_time" required>
+
+            <button type="submit">Add Event</button>
+        </form>
+    </div>
+
+</body>
+</html>
